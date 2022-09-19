@@ -12,26 +12,47 @@
 
 <body>
 
+    
     <header>
-        <nav id="arriba">
-            <ul>
-                <li><a href="./sheets/music.html">Música</a></li>
-                <li><a href="./sheets/integrantes.html">Integrantes</a></li>
-                <li><a href="./sheets/conciertos.html">Conciertos, próximas fechas</a></li>
-                <li><a href="./sheets/galeria.html">Galería</a></li>
-            </ul>
-        </nav>
+
+        <nav id="arriba" class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./img/isotipo_nikozomik_blco.png" alt=""></a>
+              <button class="navbar-toggler boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sheets/music.html">Musica</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sheets/integrantes.html">Integrantes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sheets/conciertos.html">Conciertos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sheets/galeria.html">Galería</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
     </header>
+
+    <section class="titulo">
+            <img class="nikozomik" src="./img/logotipo_isotipo_nikozomik_blco.png" alt="">
+            <h1>Un distópico mundo a través de la música</h1>
+    </section>
 
         <div class="container">
             <div class="row">
-                    <div class="col-12">
-                        <img id="nikozomik" src="./img/logotipo_isotipo_nikozomik_blco.png" alt="">
-                    </div>
-                    <div>
-                        <h1 class="titulo col-12">Un distópico mundo a través de la música</h1>
-                    </div>
-
+                    
                 <article id="start"> 
 
                     <div class="col-lg-8 col-md-8 col-sm-12">
@@ -57,13 +78,25 @@
             </div>
         </div>
 
-        <footer id="footer">
-            <ul>
-                <li><a href="#arriba">Ir arriba</a></li>
-                <li>Nikozomik@gmail.com</li>
-                <li>@Nikozomik</li>
-                <li>+56912345678</li>
-            </ul>
+        <footer>
+            <nav id="footer" class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/isotipo_nikozomik_blco.png" alt=""></a>
+                  <div id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#arriba">Ir arriba</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Nikozomik@gmail.com</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">@Nikozomik</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
