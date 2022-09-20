@@ -130,6 +130,21 @@ section{
     .start img{
         background-color:rgb(236, 173, 236);
     }
+
+    .titulo{
+        animation-duration: 10s;
+    animation-name: colorcambio;
+    animation-iteration-count: initial;
+}
+
+@keyframes colorcambio {
+    0%{
+        color:rgb(236, 173, 236);
+    }
+    100%{
+        color: white;
+    }
+    }
     
 }
 
