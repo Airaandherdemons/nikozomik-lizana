@@ -45,7 +45,7 @@ margin-right: 20%;
     }
 }
 .aparecer2{
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-name: aparecer;
     animation-iteration-count: initial;
 }
