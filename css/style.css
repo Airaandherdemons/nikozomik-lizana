@@ -17,6 +17,10 @@
     background-image: linear-gradient(to left, rgb(236, 173, 236), black);
 }
 
+.mi_nav{
+    color: white;
+}
+
 body{
     background-color: black;
 }
@@ -24,6 +28,35 @@ body{
 .nikozomik{
 margin-left: 20%;
 margin-right: 20%;
+}
+
+.aparecer{
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.aparecer2{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .titulo{
@@ -63,6 +96,12 @@ div{
     flex-wrap: wrap;
 }
 
+#aerina{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
 section{
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -83,15 +122,6 @@ section{
 
 @media screen and (max-width: 480px) {
     
-    .container1{
-        display: grid;
-        grid-template-columns: 1fr, 2;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas:
-        "titulo titulo titulo"
-        "main main main";
-    }
-
     .start {
         display: flex;
     flex-direction: column;
@@ -112,24 +142,19 @@ section{
 
 .lanz1{
     grid-area: 1;
-    display: flex;
-    justify-content: center;
     }
     
 .lanz2{
     grid-area: 2;
-    display: flex;
-    justify-content: center;
     }
     
 .lanz3{
     grid-area: 3;
-    display: flex;
-
     }
 
 .lanzamientos{
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 0.2fr 1fr;
     grid-template-areas:
