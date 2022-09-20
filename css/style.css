@@ -71,6 +71,11 @@ margin-right: 20%;
     transition: all 2s;
 }
 
+.textonav{
+    color: white;
+    transition: all 2s;
+}
+
 .titulo:hover{
     color: rgb(236, 173, 236);
 }
