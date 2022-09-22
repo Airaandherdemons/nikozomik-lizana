@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#arriba{
+    list-style-type: none;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(236, 173, 236), black);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: 3;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.boton{
+    background-image: linear-gradient(to left, rgb(236, 173, 236), black);
+}
+
+.mi_nav{
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+.nikozomik{
+margin-left: 20%;
+margin-right: 20%;
+}
+
+.aparecer{
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.aparecer2{
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.titulo{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5%;
+    transition: all 2s;
+}
+
+.textonav{
+    color: white;
+    transition: all 2s;
+}
+
+.titulo:hover{
+    color: rgb(236, 173, 236);
+}
+
+#start{
+    background-color:rgb(236, 173, 236);
+    color: white;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#aerina{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+section{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 5%;
+}
+
+#footer{
+    list-style-type: none;
+    text-decoration: none;
+    background-image: linear-gradient(to left, rgb(236, 173, 236), black);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .start {
+        display: flex;
+    flex-direction: column;
+    grid-area: main;
+    }
+
+    .start div{
+        width: 100%;
+        padding:5%;
+    }
+    .start img{
+        background-color:rgb(236, 173, 236);
+    }
+
+    .titulo{
+        animation-duration: 10s;
+    animation-name: colorcambio;
+    animation-iteration-count: initial;
+}
+
+@keyframes colorcambio {
+    0%{
+        color:rgb(236, 173, 236);
+    }
+    100%{
+        color: white;
+    }
+    }
+    
+}
+
+/* Música */
+
+.lanz1{
+    grid-area: 1;
+    }
+    
+.lanz2{
+    grid-area: 2;
+    }
+    
+.lanz3{
+    grid-area: 3;
+    }
+
+.lanzamientos{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr;
+    grid-template-areas:
+    "1 1"
+    "2 2"
+    "3 3";
+}
+
+@media screen and (max-width: 480px) {
+
+    .lanzamientos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+    
+        #txt1{
+            grid-area: 1a;
+            margin: 2.5%;
+        }
+
+        #txt2{
+            grid-area: 3a;
+            margin: 2.5%;
+        }
+
+        #txt3{
+            grid-area: 5a;
+            margin: 2.5%;
+        }
+
+        #txt4{
+            grid-area: 7a;
+            margin: 2.5%;
+        }
+
+        #spt1{
+            grid-area: 2a;
+            margin: 2.5%;
+        }
+
+        #spt2{
+            grid-area: 4a;
+            margin: 2.5%;
+        }
+
+        #spt3{
+            grid-area: 6a;
+            margin: 2.5%;
+        }
+
+        #spt4{
+            grid-area: 8a;
+            margin: 2.5%;
+        }
+
+
+    .descripciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr, 4;
+        grid-template-areas:
+        "1a 2a"
+        "3a 4a"
+        "5a 6a"
+        "6a 7a";
+        transition: all 2s;
+    }
+
+    .descripciones:hover{
+        color: rgb(236, 173, 236);
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .descripciones{
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+/* galeria */
+
+.galeria img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
